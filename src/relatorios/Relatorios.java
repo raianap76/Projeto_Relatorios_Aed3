@@ -192,7 +192,7 @@ public class Relatorios{
                         menuCategoria();
                         break;
                     case 2:
-                        menuRelatorio();
+                        Relatorio();
                         break;
                     case 3:
                         System.out.println();
@@ -227,7 +227,7 @@ public class Relatorios{
      * Menu administrativo de acesso a relatorios de compra do sistema
      * @throws Exception
      * */
-    private static void menuRelatorio() throws Exception 
+    private static void Relatorio() throws Exception 
     {//Inicio menuRelatorio
         byte opcao;
         boolean fecharMenu = false;
@@ -327,7 +327,7 @@ public class Relatorios{
                     break;
             }
         }while(!fecharMenu); 
-    }//Fim menuRelatorio 
+    }//Fim Relatorio 
 
     /**
      * Menu de acoes do Usuario
@@ -416,7 +416,7 @@ public class Relatorios{
                 read.next();//Limpar buffer do Scanner
             }
         } while (!encerrarPrograma);
-    }//Fim menuCliente
+    }
 
     /**
      * uptadeDados
@@ -459,7 +459,7 @@ public class Relatorios{
             }
 
         } while (!encerrarPrograma);
-    }//Fim uptadeDados
+    }
 
     /**
      * Opcao comprar produtos
@@ -568,7 +568,7 @@ public class Relatorios{
                 read.next();//Limpar buffer do Scanner
             }
         } while (!encerrarPrograma);
-    }//Fim menuCompra
+    }
 
     /**
      * Metodo para Adicionar um novo produto a compra
@@ -777,7 +777,7 @@ public class Relatorios{
             System.out.println("Por favor, crie ao menos uma categoria antes de adicionar um produto!");
             Thread.sleep(1000);
         }
-    }//Fim adicionarP
+    }
 
     /**
      * Metodo para adicionar uma categoria.
@@ -822,7 +822,7 @@ public class Relatorios{
                 }
             } while (erro);
         } while (outro);
-    }//Fim adicionarC
+    }
 
     /**
      * Metodo para remover um produto
@@ -862,7 +862,7 @@ public class Relatorios{
                 }
             } while (erro);
         }
-    }//Fim removerP
+    }
 
     /**
      * Metodo para remover uma categoria
@@ -1254,7 +1254,7 @@ public class Relatorios{
         ArrayList<Compra> lista = arqCompra.toList();
         lista.removeIf(c -> c.idCliente != idCliente);
         return lista;
-    }//Fim mostraCompras  
+    }
 
     /**
      * Metodo para obter a lista de items comprados pertencentes a uma compra
