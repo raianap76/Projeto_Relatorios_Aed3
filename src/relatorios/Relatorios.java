@@ -248,7 +248,7 @@ public class Relatorios{
             switch(opcao){
                 case 0:
                     ArrayList<Produto> listP = arqProdutos.toList();
-                    if(listP.isEmpty()) System.out.println("\nNão ha produtos vendidos para mostrar!");
+                    if(listP.isEmpty()) System.out.println("\nNão tem produtos em nosso sistema ainda!");
                     else{
                         System.out.print("Digite a quantidade de produtos que deseja saber: ");
                         quant = read.nextInt();
@@ -266,7 +266,7 @@ public class Relatorios{
                     ArrayList<Cliente> listC = arqClientes.toList();
                     if(listC.isEmpty()) System.out.println("Não ha clientes para mostrar!");
                     else{
-                        System.out.print("Digite a quantidade de Clientes que deseja saber: ");
+                        System.out.print("Digite a quantidade de Clientes: ");
                         quant = read.nextInt();
                         System.out.println();
                         //Ordena a lista de forma decrescente:
@@ -279,7 +279,7 @@ public class Relatorios{
                     }
                     break;
                 case 2:
-                    System.out.print("Digite o id do cliente desejado: ");
+                    System.out.print("Digite o id do cliente: ");
                     idCliente = read.nextInt();
                     c = arqClientes.pesquisar(idCliente - 1);
                     if (c != null){
@@ -296,7 +296,7 @@ public class Relatorios{
                         }
                     }
                     else {
-                        System.out.println("\nNão há um cliente com esse ID!");
+                        System.out.println("\nID Invalido!");
                         Thread.sleep(1000);
                     }
                     break;
@@ -314,7 +314,7 @@ public class Relatorios{
                         }
                     }
                     else{
-                        System.out.println("\nEsse produto não existe!");
+                        System.out.println("\nProduto Inexistende!");
                         Thread.sleep(1000);
                     }
                     break;
