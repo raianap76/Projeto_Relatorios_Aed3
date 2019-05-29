@@ -327,7 +327,7 @@ public class Relatorios{
                     break;
             }
         }while(!fecharMenu); 
-    }//Fim Relatorio 
+    }//Fim Relatorios 
 
     /**
      * Menu de acoes do Usuario
