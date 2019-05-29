@@ -32,7 +32,7 @@ class Cliente implements Entidade
         this.ultimoLogin = new Date();
     }
 
-    public void adicionarGasto(float gasto){
+   public void adicionarGasto(float gasto){
         this.despesaFeita += gasto;
     }
 
@@ -43,7 +43,6 @@ class Cliente implements Entidade
     public void zerarGasto(){
         this.despesaFeita = 0;
     }
-
 
     public void setID(int id){
         this.idCliente = id;
